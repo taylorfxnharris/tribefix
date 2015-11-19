@@ -1,0 +1,68 @@
+<main>
+  <body>
+    <div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+
+          <div class="container">
+            <div class="cover">
+            <h1 class="cover-heading">Go ahead. Find your Tribe.</h1>
+
+          <img class="img-res" src="tribe-10.png" alt="tribe">
+          <p class="lead"></p>
+          <p class="lead">
+       <a id="modal-64313" href="#modal-container-64313" role="button" class="btn btn-lg btn-info" data-toggle="modal">Sign Up</a>
+       <a id="modal-64314" href="#modal-container-64314" role="button" class="btn btn-lg btn-success" data-toggle="modal">Sign In</a>
+       </p>
+        </div>
+      </div>
+      <div class="main-modal">
+      <div class="modal fade" id="modal-container-64313" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+
+            <% include users/signup %>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+<div class="modal fade" id="modal-container-64314" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-body">
+              <% include users/login %>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+</div>
+  </div>
+</div>
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+</main>

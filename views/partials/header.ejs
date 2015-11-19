@@ -1,0 +1,51 @@
+
+
+<div class="masthead clearfix">
+    <div class="masthead-brand nav"><img class="logo" src="tribe-11.png"><a href="/"></a></div>
+
+<div>
+ <!-- Navigation -->
+
+  <div class="b-nav">
+    <li><a class="b-link b-link--active" href="/">Home</a></li>
+    <li><a class="b-link" href="#">About</a></li>
+    <li><a class="b-link" href="/events">Events</a></li>
+        <% if (currentUser) { %>
+          <li><a class="b-link" href="/show"><%= currentUser.local.email %></a></li>
+          <li><a class="b-link" href="/logout">Logout</a></li>
+        <% } else { %>
+          <!-- <li class="b-link"><a href="/login">Login</a></li>
+          <li><a class="b-link" href="/signup">Signup</a></li> -->
+        <% } %>
+
+  </div>
+
+  <!-- Burger-Icon -->
+  <div class="b-container">
+    <div class="b-menu">
+      <div class="b-bun b-bun--top"></div>
+      <div class="b-bun b-bun--mid"></div>
+      <div class="b-bun b-bun--bottom"></div>
+    </div>
+
+    <!-- Burger-Brand -->
+    <a href="/" class="b-brand"></a>
+</div>
+
+
+<div class="flash">
+  <% if (typeof message !== 'undefined') { %>
+    <% if (typeof message.error !== 'undefined' && message.error.length > 0) { %>
+      <div class="bg-danger"><%= message.error %></div>
+    <% } %>
+    <% if (typeof message.info !== 'undefined' && message.info.length > 0) { %>
+      <div class="bg-info"><%= message.info %></div>
+    <% } %>
+    <% if (typeof message.success !== 'undefined' && message.success.length > 0) { %>
+      <div class="bg-success"><%= message.success %></div>
+    <% } %>
+  <% } %>
+</div>
+ </div>
+
+  </div>
